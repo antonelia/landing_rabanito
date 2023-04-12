@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap-5.2.3/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/animate.css/animate.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section" id="section1">
+        <div class="d-flex">
+            <div class="columna-titulo"><h2>¡Hola!<br><span>somos Rabanito</span></h2></div>
+            <div class="columna-fondo-violeta"></div>
+        </div>
+
+        <!-- Mensaje de alerta -->
+        <div class="cookies-overlay wow fadeIn" id="cookies-section">
+            <div class="cookies-alert">
+                <p>¡Hey! Las cookies nos ayudan a mejorar tu experiencia en línea. Siéntete libre de optar por no aceptarlas, pero son útiles para personalizar tu experiencia. ¡Disfruta navegando!</p>
+                <div class="d-flex flex-row justify-content-evenly">
+                    <button class="btn btn-secondary"id="no-accept-cookies">Cancelar</button>
+                    <button class="btn btn-primary" id="accept-cookies">Aceptar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cookies Modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="cookies-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Gracias por aceptar nuestras cookies, es bueno empezar la experiencia con algo dulce.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gatitos Modal -->
+        <div class="modal fade" id="cookies-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Que pena que no te gustan las cookies, esperamos que si te gusten los gatitos como a nosotras</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+    <section class="section" id="section2">
+        <div class="dots-bg"></div>
+        <div class="container-fluid h-100 d-flex align-items-center">
+            <div class="row justify-content-evenly">
+                <div class="card col-3 wow fadeInUp">
+                    <img class="card-img-top" src="http://via.placeholder.com/330x264" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card col-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <img class="card-img-top" src="http://via.placeholder.com/330x264" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card col-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <img class="card-img-top" src="http://via.placeholder.com/330x264" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section" id="section3">
+        <div class="container-fluid" id="manifiesto-intro">
+           <div class="row">
+                <div class="text-center">
+                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias assumenda blanditiis quae laborum at velit officia inventore adipisci qui ipsa amet veniam saepe tenetur, cumque debitis earum omnis, aperiam id!</h2>
+                    <button class="btn btn-primary mt-5" id="ver-manifiesto">Ver video</button>
+                </div>
+            </div>
+        </div>
+        <div class="video-responsive" id="manifiesto">
+            <iframe src="https://www.youtube.com/embed/uynCeLheCPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+    </section>
+    <section class="section">
+        
+    </section>
+    <script src="lib/bootstrap-5.2.3/dist/js/bootstrap.bundle.js"></script>
+    <script src="lib/jQuery-3.6.4/jquery-3.6.4.min.js"></script>
+    <script src="js/emoji-rain.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/custom.js"></script>
+    
+</body>
+</html>
