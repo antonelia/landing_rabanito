@@ -80,6 +80,7 @@ h2{
     width: 100vw;
     position: fixed;
     top: 0;
+    overflow:-moz-hidden-unscrollable;
 }
 .cookies-alert{
     background: white;
@@ -120,11 +121,14 @@ h2{
     z-index: 2;
 }
 
-#section3{
-    
+/* Manifiesto styles */
+
+#section-manifiesto h2{
+    width: 90%;
+    margin: auto;
 }
 
-#section3 .container-fluid{
+#section-manifiesto .container-fluid{
     display: flex;
     height: 100%;
     align-items: center;
@@ -150,7 +154,7 @@ h2{
     position: relative;
     transition: .5s;
 }
-#section3 .btn{
+#section-manifiesto .btn{
     font-size: x-large;
 }
   

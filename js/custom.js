@@ -1,3 +1,8 @@
+//Esta primer funcion bloquea el scroll del sitio apenas carga para esperar que el usuario responda el mensaje de cookies
+$( document ).ready(function() {
+  //document.body.style.overflow = "hidden";
+});
+
 $("#manifiesto").hide();
 
 const button = document.getElementById('ver-manifiesto');

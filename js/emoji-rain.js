@@ -28,6 +28,7 @@ function generateEmojiRain(emojis) {
       }else{
         $('#cookies-modal').modal('show');
       }
+      
     } else {
       const randomIndex = Math.floor(Math.random() * emojis.length);
       const randomEmoji = emojis[randomIndex];
@@ -42,6 +43,9 @@ function generateEmojiRain(emojis) {
       count++;
     }
   }, 50);
+
+  //Esta linea devuelve la posibilidad de scrollear el sitio luego de que se ejecutaron las funciones de la lluvia de emojis y se mostraron los modales con los mensajes
+  document.body.style.overflow = "auto";
   
 }
 
