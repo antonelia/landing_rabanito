@@ -23,6 +23,9 @@ h2{
     font-size: xx-large;
     font-family: Lato-Bold, Arial, sans-serif;
 }
+.text-left{
+    text-align: left;
+}
 .btn{
     border: none;
     font-family: Lato-Regular, Arial, sans-serif;
@@ -37,7 +40,7 @@ h2{
 }
 
 .section{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -207,8 +210,11 @@ h2{
     right: -35px;
 }
 
-#seccion-3d .texto{
-    transform: rotate(180deg);
+#seccion-3d{
+    background: url("../assets/img/fondo-violeta-seccion-3d.png");
+    background-position-x: 151%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #seccion-3d .container{
@@ -216,5 +222,34 @@ h2{
     height: 100%;
     align-items: center;
 }
+
+#seccion-3d .rotado{
+    transition: transform 0.5s ease;
+    transform: rotate(180deg);
+}
+.rotado.rotated{
+    /* transform: rotate(270deg); */
+}
+#seccion-3d i{
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    border-radius: 50px;
+    background: #e43c5a;
+    color: white;
+    position: absolute;
+    top: 430vh;
+    left: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .follow-cursor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+} */
   
 

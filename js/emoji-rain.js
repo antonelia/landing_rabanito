@@ -22,11 +22,12 @@ function generateEmojiRain(emojis) {
     if (count >= 60) {
       clearInterval(intervalId);
       emojiRainContainer.innerHTML = "";
-      console.log(msg);
       if( msg == 'gatitos'){
         $('#gatitos-modal').modal('show');
+        console.log("gatitos");
       }else{
         $('#cookies-modal').modal('show');
+        console.log("cookies");
       }
       
     } else {

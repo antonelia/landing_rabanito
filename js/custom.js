@@ -14,12 +14,24 @@ $( document ).ready(function() {
     asNavFor: '.slider-for',
     variableWidth: true
   });
+
   $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
     asNavFor: '.slider-ilustraciones'
+  });
+
+  const rotatebutton = $('#follow-cursor');
+  const section = $('.rotado');
+
+  rotatebutton.on('click', function() {
+    section.animate({rotate: '+=90deg'}, 500);
+    const currentRotation = section.css('transform');
+      if (currentRotation === 'matrix(1, 0, 0, 1, 0, 0)' || currentRotation === 'none') {
+        button.hide();
+      }
   });
 });
 
@@ -41,5 +53,21 @@ button.addEventListener('click', function () {
     $("#manifiesto-intro").hide();
     $("#manifiesto").show();
 });
+
+$("#follow-cursor").hide();
+
+$(".rotado").mouseenter(function() {
+  $("#follow-cursor").fadeIn();
+});
+
+
+// const rotateButton = document.querySelector('.follow-cursor');
+//   document.addEventListener('mousemove', e => {
+//   const mouseX = e.clientX;
+//   const mouseY = e.clientY;
+//   rotateButton.style.left = mouseX + 'px';
+//   rotateButton.style.top = mouseY + 'px';
+// });
+
 
   
