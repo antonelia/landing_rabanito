@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lib/bootstrap-5.2.3/dist/css/bootstrap.css">
     <link rel="stylesheet" href="lib/animate.css/animate.css">
+    <link rel="stylesheet" href="lib/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
 </head>
@@ -100,12 +103,12 @@
     <!-- Seccion 3 Manifiesto -->
     <section class="section" id="section-manifiesto">
         <div class="container-fluid" id="manifiesto-intro">
-           <div class="row">
+           <div class="row m-auto">
                 <div class="text-center">
-                    <h2>Por fuera podemos parecer como cualquier otra agencia, coloridos y alegres
+                    <h2 class="wow fadeInDown">Por fuera podemos parecer como cualquier otra agencia, coloridos y alegres
                         peeeero por dentro somos inesperados.<br>
                         Así de inesperados como el sabor del rábano: crujiente, ligero y un toque picante.</h2>
-                    <button class="btn btn-primary mt-5" id="ver-manifiesto">Ver video</button>
+                    <button data-wow-delay="0.2s" class="wow fadeInDown btn btn-primary mt-5" id="ver-manifiesto">Ver video</button>
                 </div>
             </div>
         </div>
@@ -116,11 +119,102 @@
 
     <!-- Seccion 4 Ilustraciones -->
     <section class="section" id="seccion-ilustraciones">
+        <h2 class="text-center mb-5">¡Mirá nuestros trabajos!</h2>
+        <div class="container">
+            <div class="row">
+                <div class="slider-for text-center mt-5 mb-5">
+                    <div class="text-center">
+                        <h3>Monster Inc</h3>
+                        <p>Trabajo vectorizado inspirado en la obra de Tom Whalen</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-vector-pen"></i>
+                            <i class="bi bi-bookmark-heart"></i>
+                            <i class="bi bi-bezier"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Simpsons</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-vector-pen"></i>
+                            <i class="bi bi-bookmark-heart"></i>
+                            <i class="bi bi-bezier"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Frozen</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-vector-pen"></i>
+                            <i class="bi bi-bookmark-heart"></i>
+                            <i class="bi bi-bezier"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Nike</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-vector-pen"></i>
+                            <i class="bi bi-bookmark-heart"></i>
+                            <i class="bi bi-bezier"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Chica</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-vector-pen"></i>
+                            <i class="bi bi-bookmark-heart"></i>
+                            <i class="bi bi-bezier"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Mujer vintage</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-vector-pen"></i>
+                            <i class="bi bi-bookmark-heart"></i>
+                            <i class="bi bi-bezier"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Hombre Vintage</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-vector-pen"></i>
+                            <i class="bi bi-bookmark-heart"></i>
+                            <i class="bi bi-bezier"></i>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="slider-ilustraciones slider responsive mt-3">
+                    <div><img src="/assets/img/ilustracion-monster-inc.png" alt=""></div>
+                    <div><img src="/assets/img/ilustracion-los-simpsons.png" alt=""></div>
+                    <div><img src="/assets/img/ilustracion-frozen.png" alt=""></div>
+                    <div><img src="/assets/img/ilustracion-nike.jpg" alt=""></div>
+                    <div><img src="/assets/img/ilustracion-chica.jpg" alt=""></div>
+                    <div><img src="/assets/img/collage-mujer-vintage.jpg" alt=""></div>
+                    <div><img src="/assets/img/collage-hombre-vintage.png" alt=""></div>
+                </div>
+            </div>
+        </div>
         
     </section>
 
     <!-- Seccion 5 3D -->
-    <section class="section">
+    <section class="section" id="seccion-3d">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 texto">
+                    <h2>Soy un titulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit dolor nam similique, necessitatibus eligendi corporis minus ipsam vitae! Culpa sequi sed enim officia nulla, tenetur mollitia ex quam soluta autem.</p>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
@@ -131,6 +225,7 @@
     <script>
         new WOW().init();
     </script>
+    <script src="lib/slick-1.8.1/slick/slick.js"></script>
     <script src="js/custom.js"></script>
     
 </body>

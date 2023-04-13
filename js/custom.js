@@ -1,6 +1,26 @@
 //Esta primer funcion bloquea el scroll del sitio apenas carga para esperar que el usuario responda el mensaje de cookies
 $( document ).ready(function() {
   //document.body.style.overflow = "hidden";
+  $('.slider-ilustraciones').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    dots: true,
+    arrow: true,
+    loop: true,
+    //autoplay: true,
+    autoplaySpeed: 2500,
+    cssEase: 'ease',
+    asNavFor: '.slider-for',
+    variableWidth: true
+  });
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-ilustraciones'
+  });
 });
 
 $("#manifiesto").hide();

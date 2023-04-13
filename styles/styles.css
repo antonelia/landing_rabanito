@@ -157,6 +157,64 @@ h2{
 #section-manifiesto .btn{
     font-size: x-large;
 }
-  
+
+/* Seccion Slider ilustraciones */
+
+#seccion-ilustraciones{
+    
+}
+
+.slider-for i{
+    color: #1C1C34;
+    font-size: 30px;
+    margin: 1rem;
+}
+
+.slider-ilustraciones img{
+    max-height: 500px;
+}
+
+.slider-ilustraciones .slick-slide{
+    transition: transform .2s ease-in-out;
+}
+
+.slider-ilustraciones .slick-slide{
+    opacity: 0.6;
+    transform: scale(0.8);
+}
+.slider-ilustraciones  .slick-current{
+    opacity: 1;
+    transform: scale(1);
+}
+.slick-prev:before,
+.slick-next:before{
+    color:#6DC2C4;
+    opacity: 1;
+    font-size: 40px;
+}
+.slick-prev,
+.slick-next{
+    height: 40px;
+    width: 40px;
+}
+.slick-prev:before{
+    margin-right: 40px;
+}
+.slick-prev{
+    left: -35px;
+}
+.slick-next {
+    right: -35px;
+}
+
+#seccion-3d .texto{
+    transform: rotate(180deg);
+}
+
+#seccion-3d .container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
   
 
