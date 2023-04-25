@@ -11,10 +11,15 @@ function generateCookiesEmojis() {
   generateEmojiRain(emojis);
   
 }
+$( document ).ready(function() {
+  $('#cookies-section').modal('show');
+});
+
+
 
 function generateEmojiRain(emojis) {
   // Código que genera la lluvia de emojis
-  $("#cookies-section").fadeOut();
+  $("#cookies-section").modal('toggle');
   const emojiRainContainer = document.createElement("div");
   document.body.appendChild(emojiRainContainer);
   let count = 0;
