@@ -1,0 +1,12 @@
+@import url(colors.css);
+body.dark-mode,
+.dark-mode #section1{
+    background-color: var(--dark-blue-color);
+    color: white !important;
+}
+.dark-mode p,
+.dark-mode h2,
+.dark-mode ul li a,
+.dark-mode .navbar-brand{
+    color: white !important;
+}
