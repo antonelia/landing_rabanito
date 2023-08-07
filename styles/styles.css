@@ -77,6 +77,8 @@ header{
     top: 0;
     width: 100vw;
     z-index: 100;
+    background-color: rgba(255, 255, 255, 0.655);
+    backdrop-filter: blur(20px);
 }
 
 header .navbar-brand{
@@ -317,6 +319,20 @@ header .nav-item{
 }
 .card{
     z-index: 2;
+    border: none;
+    background-color: var(--card-fill);
+    box-shadow: 3px 6px 15px #0000001a;
+    border-radius: 15px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.card-title{
+    color: var(--pink-color);
+    font-weight: 900;
 }
 
 #section2 .purple-waves{
@@ -327,6 +343,21 @@ header .nav-item{
     top: calc(100vh + 85vh);
     left: -25px;
 }
+
+.slide-section{
+    height: 700px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+.slick-slide:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+
 /* end seccion 2 */
 
 /* Manifiesto styles */
@@ -608,4 +639,10 @@ background: #fff;
 }
 #seccion-puzzle .hide {
     display:none;
+}
+
+@media screen and (min-width: 768px) {
+    .card{
+        width: 30%;
+    }
 }
