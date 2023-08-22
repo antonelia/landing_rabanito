@@ -646,3 +646,58 @@ background: #fff;
         width: 30%;
     }
 }
+
+/*Campaña McDonalds*/
+#seccion-mcdonalds{
+    background-image: url(/assets/img/section-bg-lightblue.svg);
+    background-position: center;
+    height: 100%;
+}
+
+#seccion-mcdonalds h2, #seccion-mcdonalds h3{
+    color: white;
+}
+
+#seccion-mcdonalds article{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.password{
+    width: 40%;
+}
+
+.form-control{
+    border: none;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.btn-form{
+    background-color: white;
+}
+
+.btn-form:hover{
+    background-color: var(--pink-color);
+}
+
+.btn-form:hover i{
+    color: white;
+}
+
+.video{
+    width: 65%
+}
+
+/*Branding*/
+
+.logo-indar{
+    filter: brightness(0) saturate(100%);
+}
+
+.logo-indar:hover{
+    filter: none;
+    transition: .3s;
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="lib/animate.css/animate.css">
     <link rel="stylesheet" href="lib/slick/slick.css">
     <link rel="stylesheet" href="lib/slick/slick-theme.css">
+    <script src="https://kit.fontawesome.com/a1c6ec28f2.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/{toggle name}.min.css">
 
@@ -299,6 +300,30 @@
         
     </section>
 
+    <!-- Branding -->
+
+    <section class="section">
+        <div class="row">
+
+            <div class="col-6 text-center">
+                <img src="assets/img/logo-indar-color.png" alt="Logo Indar" class="logo-indar" width="70%">
+            </div>
+
+            <div class="col-6">
+                <h3>Indar SRL</h3>
+                <p>Branding para fábrica de sillas</p>
+
+                <div class="d-flex">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <i class="fas fa-bezier-curve"></i>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
     <!-- Monster ink armado en fade -->
     <!-- <section class="section container" id="seccion-layers-fade">
         <div class="row align-items-center">
@@ -377,6 +402,29 @@
         </article>
     </section>
 
+    <section class="section" id="seccion-mcdonalds">
+        <article class="text-center my-auto" id="password-container">
+            <h2>¡Alto ahí!</h2>
+            <h3>Para poder continuar, tenes que ingresar la contraseña</h3>
+
+            <div class="password mx-auto">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ingresa la password" aria-describedby="password-button" id="password-input">
+                    <button class="btn btn-outline-secondary btn-form" type="button" id="password-button"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </article>
+
+        <article class="text-center my-auto d-none" id="mcdonalds-container">
+            <video src="/assets/vid/videocaso_mcdonalds.mp4" controls class="video" poster="assets/img/videocaso-thumbnail.png"></video>
+        </article>
+    </section>
+
+
+
+
+    <!--JS-->
+
     <script src="lib/bootstrap-5.2.3/dist/js/bootstrap.bundle.js"></script>
     <script src="lib/jQuery-3.6.4/jquery-3.6.4.min.js"></script>
     <script src="js/emoji-rain.js"></script>
@@ -435,6 +483,27 @@
             $('#seccion-parallax').addClass('d-none');
             $('#seccion-antes-y-despues').removeClass('d-none');
         }); 
+    </script>
+
+    <script>
+        var password = 'pass';
+        var input = $('#password-input');
+
+        $('#password-button').click(function(){
+            if(input.val()==password){
+            $('#password-container').addClass('d-none');
+            $('#mcdonalds-container').removeClass('d-none');
+            }else if(input.val()==""){
+                alert('Ingresa una contraseña');
+            }else{
+                alert('Contraseña incorrecta');
+            }
+        });
+        
+
+        
+
+
     </script>
 
 
