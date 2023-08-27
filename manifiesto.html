@@ -1,0 +1,177 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="lib/bootstrap-5.2.3/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="lib/animate.css/animate.css">
+        <link rel="stylesheet" href="lib/slick/slick.css">
+        <link rel="stylesheet" href="lib/slick/slick-theme.css">
+        <script src="https://kit.fontawesome.com/a1c6ec28f2.js" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/{toggle name}.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles/styles_parallax.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/styles_dark_mode.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Rabanito</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Manifiesto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactanos</a>
+                        </li>
+                        <label>
+                            <input class='toggle-checkbox' type='checkbox' id="darkModeToggle"></input>
+                            <div class='toggle-slot'>
+                              <div class='sun-icon-wrapper'>
+                                <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+                              </div>
+                              <div class='toggle-button'></div>
+                              <div class='moon-icon-wrapper'>
+                                <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+                              </div>
+                            </div>
+                          </label>
+    
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+            <!-- Seccion 3 Manifiesto -->
+    <section class="section d-flex align-items-center" id="section-manifiesto">
+        <div class="lightblue-waves"></div>
+        <div class="yellow-waves"></div>
+        <div class="cubo-3d"></div>
+        <div class="cubo-3d abajo"></div>
+        <div class="container-fluid" id="manifiesto-intro">
+           <div class="row m-auto">
+                <div class="text-center">
+                    <h2 class="wow fadeInDown" >Por fuera podemos parecer como cualquier otra agencia,</h2>
+                    <h2 class="wow fadeInDown" data-wow-delay="1s">coloridos y alegres peeeero por dentro somos inesperados.</h2>
+                    <h2 class="wow fadeInDown" data-wow-delay="2s"> Así de inesperados como el sabor del rábano:</h2>
+                    <h2 class="wow fadeInDown" data-wow-delay="3s">crujiente, ligero y un toque picante.</h2>
+                    <button class="wow fadeInDown btn btn-primary mt-5" id="ver-manifiesto"  data-wow-delay="4s">Ver video</button>
+                </div>
+            </div>
+        </div>
+        <div class="video-responsive" id="manifiesto">
+            <iframe src="https://www.youtube.com/embed/uynCeLheCPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+            <!--JS-->
+
+    <script src="lib/bootstrap-5.2.3/dist/js/bootstrap.bundle.js"></script>
+    <script src="lib/jQuery-3.6.4/jquery-3.6.4.min.js"></script>
+    <script src="js/emoji-rain.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/slick/slick.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#slick-slider').slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+
+                responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                    },
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                ]
+                
+            });
+
+        });
+
+    </script>
+
+    <script>
+        $('#slider-2').click(function(){
+            $('#seccion-antes-y-despues').addClass('d-none');
+            $('#seccion-parallax').removeClass('d-none');
+        }); 
+
+        $('#slider-1').click(function(){
+            $('#seccion-parallax').addClass('d-none');
+            $('#seccion-antes-y-despues').removeClass('d-none');
+        }); 
+    </script>
+
+    <script>
+        var password = 'pass';
+        var input = $('#password-input');
+
+        $('#password-button').click(function(){
+            if(input.val()==password){
+            $('#password-container').addClass('d-none');
+            $('#mcdonalds-container').removeClass('d-none');
+            }else if(input.val()==""){
+                alert('Ingresa una contraseña');
+            }else{
+                alert('Contraseña incorrecta');
+            }
+        });
+        
+
+        
+
+
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js" integrity="sha512-lIKG1kC5TMb1Zx32vdz1n31YJMZRknVY20U9MJ28hD3y2c0OKN0Ce5NhJji78v8zX5UOSsm+MTBOcJt7yMBnSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/puzzle.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+    
+   
+    <script src="js/custom.js"></script>
+    </body>
+    </html>

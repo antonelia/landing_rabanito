@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="lib/bootstrap-5.2.3/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/animate.css/animate.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+    <script src="https://kit.fontawesome.com/a1c6ec28f2.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/{toggle name}.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles_parallax.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/nosotras.css">
+    <link rel="stylesheet" href="styles/styles_dark_mode.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Rabanito</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nosotras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Manifiesto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactanos</a>
+                    </li>
+                    <label>
+                        <input class='toggle-checkbox' type='checkbox' id="darkModeToggle"></input>
+                        <div class='toggle-slot'>
+                          <div class='sun-icon-wrapper'>
+                            <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+                          </div>
+                          <div class='toggle-button'></div>
+                          <div class='moon-icon-wrapper'>
+                            <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+                          </div>
+                        </div>
+                      </label>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- Seccion 2 Nosotras -->
+    <section class="section d-flex" id="section2">
+        <div class="dots-bg"></div>
+        <div class="purple-waves wow fadeInRight"></div>
+        <div class="lightblue-waves wow fadeInLeft"></div>
+        <div class="container h-100 m-auto">
+            <h2 class="text-left mb-5">¿Quiénes somos?</h2>
+            <div class="row justify-content-evenly">
+                <div class="card col-md-3 wow fadeInUp">
+                    <img class="card-img-top" src="/assets/img/anto-img.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Anto Rodriguez</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+                <div class="card col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <img class="card-img-top" src="/assets/img/flor-img.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Flor Luis</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+                <div class="card col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <img class="card-img-top" src="/assets/img/juli-img.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Juli Valle</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--JS-->
+
+    <script src="lib/bootstrap-5.2.3/dist/js/bootstrap.bundle.js"></script>
+    <script src="lib/jQuery-3.6.4/jquery-3.6.4.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    
+    <script>
+        new WOW().init();
+    </script>
+
+    
+    <script>
+        var password = 'pass';
+        var input = $('#password-input');
+    
+        $('#password-button').click(function(){
+            if(input.val()==password){
+                $('#password-container').addClass('d-none');
+                $('#mcdonalds-container').removeClass('d-none');
+            }else if(input.val()==""){
+                alert('Ingresa una contraseña');
+            }else{
+                alert('Contraseña incorrecta');
+            }
+        });
+    </script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js" integrity="sha512-lIKG1kC5TMb1Zx32vdz1n31YJMZRknVY20U9MJ28hD3y2c0OKN0Ce5NhJji78v8zX5UOSsm+MTBOcJt7yMBnSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/puzzle.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+
+    <script src="js/custom.js"></script>
+</body>
+</html>

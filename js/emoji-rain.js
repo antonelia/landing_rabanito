@@ -4,12 +4,12 @@ function generateAnimalEmojis() {
   const emojis = ['🐱', '🐱', '🐱', '🐱'];
   generateEmojiRain(emojis);
 }
-  
+
 function generateCookiesEmojis() {
   msg = "cookies";
   const emojis = ["🍪", "🍪", "🍪", "🍪"];
   generateEmojiRain(emojis);
-  
+
 }
 $( document ).ready(function() {
   $('#cookies-section').modal('show');
@@ -34,7 +34,7 @@ function generateEmojiRain(emojis) {
         $('#cookies-modal').modal('show');
         console.log("cookies");
       }
-      
+
     } else {
       const randomIndex = Math.floor(Math.random() * emojis.length);
       const randomEmoji = emojis[randomIndex];
@@ -52,7 +52,7 @@ function generateEmojiRain(emojis) {
 
   //Esta linea devuelve la posibilidad de scrollear el sitio luego de que se ejecutaron las funciones de la lluvia de emojis y se mostraron los modales con los mensajes
   document.body.style.overflow = "auto";
-  
+
 }
 
 const animalsButton = document.getElementById('no-accept-cookies');

@@ -1,0 +1,43 @@
+/* SECCION 2 */
+#section2 h2{
+    display: inline-block;
+}
+/* end seccion 2 */
+
+/* Dots background */
+.dots-bg {
+    height: 70vh;
+    width: 80vh;
+    position: absolute;
+    left: 0;
+    top: 20vh;
+    background-image: radial-gradient(rgb(228, 60, 90) 2px, transparent 0);
+    background-size: 40px 40px;
+    z-index: 1;
+}
+.card{
+    z-index: 2;
+    border: none;
+    background-color: var(--card-fill);
+    box-shadow: 3px 6px 15px #0000001a;
+    border-radius: 15px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.card-title{
+    color: var(--pink-color);
+    font-weight: 900;
+}
+
+#section2 .purple-waves{
+    top: 25vh;
+    right: -50px;
+}
+#section2 .lightblue-waves{
+    top: 85vh;
+    left: -25px;
+}
