@@ -37,9 +37,10 @@
 }
 
 #section-manifiesto .lightblue-waves{
-    right: 10vw;
+    left: -2vw;
     top: 10vh;
     transform: rotate(90deg);
+    z-index: -1;
 }
 
 #section-manifiesto .yellow-waves{

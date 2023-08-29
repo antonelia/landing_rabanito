@@ -6,7 +6,9 @@ body.dark-mode,
 }
 .dark-mode p,
 .dark-mode h2,
+.dark-mode h3,
 .dark-mode h5,
+.dark-mode i,
 .dark-mode ul li a,
 .dark-mode .navbar-brand{
     color: white !important;
