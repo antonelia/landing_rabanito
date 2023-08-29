@@ -19,6 +19,8 @@
     background-repeat: no-repeat, no-repeat;
     background-size: 40px;
 }end custom scrollbar */
+
+/* General styles */
 body{
     overflow-x: hidden;
 }
@@ -27,6 +29,32 @@ h2{
     font-size: xx-large;
     font-family: Lato-Bold, Arial, sans-serif;
 }
+
+.text-left{
+  text-align: left;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+.btn{
+  border: none;
+  font-family: Lato-Regular, Arial, sans-serif;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+}
+.btn-primary{
+  background: var(--pink-color);
+}
+.h-100{
+  height: 100%;
+}
+
+.section{
+  min-height: 100vh;
+  width: 100%;
+}
+/* end general styles */
 
 /* Miscelaneas */
 .purple-waves{
@@ -189,30 +217,6 @@ header .nav-item{
   }
 
 /* end header */
-.text-left{
-    text-align: left;
-}
-
-.ml-auto{
-    margin-left: auto;
-}
-.btn{
-    border: none;
-    font-family: Lato-Regular, Arial, sans-serif;
-    padding: 0.5rem 2rem;
-    border-radius: 25px;
-}
-.btn-primary{
-    background: var(--pink-color);
-}
-.h-100{
-    height: 100%;
-}
-
-.section{
-    min-height: 100vh;
-    width: 100%;
-}
 
 /* LOADER */
 #loader{
