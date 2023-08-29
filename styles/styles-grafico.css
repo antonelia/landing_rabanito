@@ -1,0 +1,12 @@
+.slide-section{
+    height: 700px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+.slick-slide:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .3s;
+}

@@ -1,0 +1,58 @@
+/* Manifiesto styles */
+
+#section-manifiesto h2{
+    /* width: 90%; */
+    margin: auto;
+    line-height: 1.5;
+}
+
+#section-manifiesto .container-fluid{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.video-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	/* position: relative; */
+}
+
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+	height: 60%;
+	left: 20%;
+	position: absolute;
+	top: 15%;
+	width: 60%;
+}
+
+#ver-manifiesto {
+    position: relative;
+    transition: .5s;
+}
+#section-manifiesto .btn{
+    font-size: x-large;
+}
+
+#section-manifiesto .lightblue-waves{
+    right: 10vw;
+    top: 10vh;
+    transform: rotate(90deg);
+}
+
+#section-manifiesto .yellow-waves{
+    right: -50px;
+    top: 80vh;
+}
+
+#section-manifiesto .cubo-3d{
+    right: 20px;
+    top: 05vh;
+}
+
+#section-manifiesto .cubo-3d.abajo{
+    top: 80vh;
+    left: 100px;
+}

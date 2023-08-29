@@ -55,8 +55,27 @@ function generateEmojiRain(emojis) {
 
 }
 
+function pageRedirect() {
+  window.location.href = 'nosotras.html';
+}
+
+function avanzarPaginaNosotrasCookies(){
+  $('#cookies-modal').modal('toggle');
+  pageRedirect();
+}
+function avanzarPaginaNosotrasGatitos(){
+  $('#gatitos-modal').modal('toggle');
+  pageRedirect();
+}
+
 const animalsButton = document.getElementById('no-accept-cookies');
 animalsButton.addEventListener('click', generateAnimalEmojis);
 
 const fruitsButton = document.getElementById('accept-cookies');
 fruitsButton.addEventListener('click', generateCookiesEmojis);
+
+const continuarCookiesButton = document.getElementById('continuar-cookies');
+continuarCookiesButton.addEventListener('click', avanzarPaginaNosotrasCookies);
+
+const continuarGatitosButton = document.getElementById('continuar-gatitos');
+continuarGatitosButton.addEventListener('click', avanzarPaginaNosotrasGatitos);

@@ -34,10 +34,6 @@ $( document ).ready(function() {
       console.log("quitar clase")
     }
   });
-  $(".close-modal").click(function(){
-    alert("click");
-    window.location = nosotras.html;
-  });
 });
 
 $("#follow-cursor").hide();
