@@ -18,6 +18,9 @@
     <title>Document</title>
 </head>
 <body>
+  <div id="loader">
+    <div class="lds-heart"><div></div></div>
+  </div>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -62,13 +65,13 @@
     </header>
     <!-- Seccion 2 Nosotras -->
     <section class="section d-flex" id="section2">
-        <div class="dots-bg"></div>
-        <div class="purple-waves wow fadeInRight" data-wow-delay="1s"></div>
-        <div class="lightblue-waves wow fadeInLeft"></div>
+        <div class="dots-bg wow fadeInDown" data-wow-delay="1.5s"></div>
+        <div class="purple-waves wow fadeInRight" data-wow-delay="2s"></div>
+        <div class="lightblue-waves wow fadeInLeft" data-wow-delay="1s"></div>
         <div class="container h-100 m-auto">
             <h2 class="text-left mb-5">¿Quiénes somos?</h2>
             <div class="row justify-content-evenly">
-                <div class="card col-md-3 wow fadeInUp">
+                <div class="card col-md-3 wow fadeInUp" data-wow-delay="1s">
                     <img class="card-img-top" src="/assets/img/anto-img.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Anto Rodriguez</h5>
@@ -76,7 +79,7 @@
                       <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
                     </div>
                 </div>
-                <div class="card col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="card col-md-3 wow fadeInUp" data-wow-delay="1.2s">
                     <img class="card-img-top" src="/assets/img/flor-img.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Flor Luis</h5>
@@ -84,7 +87,7 @@
                       <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
                     </div>
                 </div>
-                <div class="card col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="card col-md-3 wow fadeInUp" data-wow-delay="1.4s">
                     <img class="card-img-top" src="/assets/img/juli-img.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Juli Valle</h5>
@@ -99,8 +102,8 @@
         <div class="container-fluid" id="manifiesto-intro">
             <div class="row m-auto">
                  <div class="text-center">
-                     <h2 class="wow rotateInDownLeft">Y ahora que nos conociste a nosotras</h2>
-                     <h2 class="wow rotateInUpRight" data-wow-delay="1s">te invitamos a que conozcas Rabanito</h2>
+                     <h2 class="wow fadeInDown">Y ahora que nos conociste a nosotras</h2>
+                     <h2 class="wow fadeInDown" data-wow-delay="1s">te invitamos a que conozcas Rabanito</h2>
                      <a class="wow fadeInDown btn btn-primary mt-5" id="navegar-manifiesto"  data-wow-delay="2s" role="button" href="manifiesto.html">Avanzar</a>
                  </div>
              </div>
@@ -120,5 +123,12 @@
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
 
     <script src="js/custom.js"></script>
+    <script>
+      $(window).on('load', function(){
+        setTimeout(function() {
+          $('#loader').fadeOut();
+        }, 1000);
+      });
+    </script>
 </body>
 </html>

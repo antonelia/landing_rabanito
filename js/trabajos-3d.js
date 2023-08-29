@@ -1,5 +1,34 @@
 $( document ).ready(function() {
     $('#modal-codigo-qr').modal('hide');
+     //document.body.style.overflow = "hidden";
+  const rotatebutton = $('#follow-cursor');
+  const section = $('.rotado');
+  let clicksRotar = 0;
+  let darkModeEnabled;
+
+  rotatebutton.on('click', function() {
+    clicksRotar ++;
+    console.log(clicksRotar);
+    if(clicksRotar < 3){
+      section.animate({rotate: '+=90deg'}, 500);
+    }
+    if(clicksRotar >= 2){
+      setTimeout(function() {
+        rotatebutton.fadeOut();
+      }, 500);
+    }
+    
+    const currentRotation = section.css('transform');
+      if (currentRotation === 'matrix(1, 0, 0, 1, 0, 0)' || currentRotation === 'none') {
+        button.hide();
+      }
+  });
+});
+
+$("#follow-cursor").hide();
+
+$(".rotado").mouseenter(function() {
+  $("#follow-cursor").fadeIn();
 });
 
 const splitWords = () => {

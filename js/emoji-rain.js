@@ -12,7 +12,18 @@ function generateCookiesEmojis() {
 
 }
 $( document ).ready(function() {
-  $('#cookies-section').modal('show');
+  
+});
+
+$(window).on('load', function(){
+  setTimeout(function() {
+      $('#loader').fadeOut();
+  }, 2000);
+
+  setTimeout(function() {
+    $('#cookies-section').modal('show');
+  }, 4000);
+  
 });
 
 

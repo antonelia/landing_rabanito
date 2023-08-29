@@ -21,6 +21,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="loader">
+        <div class="lds-heart"><div></div></div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -199,22 +202,6 @@
         }); 
     </script>
 
-    <script>
-        var password = 'pass';
-        var input = $('#password-input');
-
-        $('#password-button').click(function(){
-            if(input.val()==password){
-            $('#password-container').addClass('d-none');
-            $('#mcdonalds-container').removeClass('d-none');
-            }else if(input.val()==""){
-                alert('Ingresa una contraseña');
-            }else{
-                alert('Contraseña incorrecta');
-            }
-        });
-    </script>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js" integrity="sha512-lIKG1kC5TMb1Zx32vdz1n31YJMZRknVY20U9MJ28hD3y2c0OKN0Ce5NhJji78v8zX5UOSsm+MTBOcJt7yMBnSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/parallax.js"></script>
@@ -222,6 +209,7 @@
     
    
     <script src="js/custom.js"></script>
+    <script src="js/grafico.js"></script>
     
 </body>
 </html>
