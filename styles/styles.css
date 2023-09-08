@@ -125,6 +125,13 @@ header .nav-item{
     padding: 0 1rem;
 }
 
+.switch-mode{
+  position: fixed;
+  z-index: 50;
+  top: 20px;
+  right: 5%;
+}
+
 .toggle-checkbox {
     position: absolute;
     opacity: 0;
@@ -222,11 +229,28 @@ header .nav-item{
 #loader{
     height: 100vh;
     width: 100vw;
-    background: var(--pink-color);
     position: absolute;
     top: 0;
     z-index: 1000;
 }
+
+.background-pink{
+  background: var(--pink-color);
+}
+
+.background-darkblue{
+  background: var(--dark-blue-color);
+}
+
+.background-lightblue{
+  background: var(--light-blue-color);
+}
+
+.background-purple{
+  background: var(--purple-color);
+}
+
+
 
 .lds-heart {
     display: inline-block;
@@ -408,3 +432,4 @@ header .nav-item{
     filter: none;
     transition: .3s;
 }
+
