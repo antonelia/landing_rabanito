@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-index.css">
     <link rel="stylesheet" href="styles/styles_dark_mode.css">
+
+    <!--Lottie-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <title>Experiencia Rabanito</title>
 </head>
 <body>
@@ -49,17 +53,19 @@
     </section>
     <!-- Mensaje de alerta -->
     <div class="modal fade" id="cookies-section" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
-                <!-- <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div> -->
+                <div class="modal-header justify-content-center">
+                    <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+                    <lottie-player src="https://lottie.host/a9c38abd-1e57-485f-b931-81222e46a100/7v16ANZPwN.json" background="transparent"  speed="0.2"  style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+                </div> 
                 <div class="modal-body text-center">
-                    <p>¡Hey! Las cookies nos ayudan a mejorar tu experiencia en línea. Siéntete libre de optar por no aceptarlas, pero son útiles para personalizar tu experiencia. ¡Disfruta navegando!</p>
+                    <h3><b>Permitir Cookies</b></h3>
+                    <p class="mt-3">Usamos cookies para asegurarnos la mejor experiencia dentro de nuestro sitio</p>
                 </div>
                 <div class="modal-footer justify-content-evenly">
-                    <button class="btn btn-secondary"id="no-accept-cookies">Rechazar</button>
-                    <button class="btn btn-primary" id="accept-cookies">Aceptar</button>
+                    <button class="btn btn-secondary"id="no-accept-cookies">No, gracias</button>
+                    <button class="btn btn-primary" id="accept-cookies">Ñom ¡Que rico!</button>
                 </div>
             </div>
         </div>
@@ -71,12 +77,12 @@
                 <div class="modal-header">
                     <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                 </div>
-                <div class="modal-body">
-                    <p>¡Gracias por aceptar nuestras cookies! Es bueno empezar la experiencia con algo dulce! 😉</p>
-                    <p>Ahora te invitamos a que nos conozcas un poco más</p>
+                <div class="modal-body text-center">
+                    <h3><b>¡Cookies aceptadas!</b></h3>
+                    <p class="mt-3">Es bueno empezar la experiencia con algo dulce! 😋<br>Dale a <b>"continuar"</b> para seguir conociéndonos</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="continuar-cookies">Continuar</button>
+                    <button type="button" class="btn btn-primary" id="continuar-cookies"><span>Continuar</span></button>
                 </div>
             </div>
         </div>
