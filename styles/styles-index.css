@@ -100,3 +100,6 @@ body{
         transform: translateY(100vh);
     }
 }
+#loader{
+    background: var(--pink-color);
+}
