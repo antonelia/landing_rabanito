@@ -437,25 +437,6 @@ header .nav-item{
     }
 }
 
-/*Campaña McDonalds*/
-#seccion-mcdonalds{
-    background-image: url(/assets/img/section-bg-lightblue.svg);
-    background-position: center;
-    height: 100%;
-}
-
-#seccion-mcdonalds h2, #seccion-mcdonalds h3{
-    color: white;
-}
-
-#seccion-mcdonalds article{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .password{
     width: 40%;
 }
@@ -513,4 +494,16 @@ body.modal-open section{
 
 .modal-footer button span{
   font-size: medium;
+}
+
+/* Videos */
+.plyr{
+  width: 66%;
+  margin: auto;
+}
+.plyr svg{
+  color: white;
+}
+.plyr button{
+  border-radius: 50%;
 }

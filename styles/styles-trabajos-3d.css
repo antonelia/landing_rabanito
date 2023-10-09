@@ -66,3 +66,14 @@ a {
     display: block;
     padding: 1rem;
 }
+.div-emojis{
+    margin-top: 1rem;
+}
+.div-emojis img{
+    max-width: 45px;
+    margin: 0 0.5rem;
+}
+.qr-code{
+    max-width: 20%;
+    margin-top: 1rem !important;
+}

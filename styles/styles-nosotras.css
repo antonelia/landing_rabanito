@@ -23,11 +23,6 @@
     border-radius: 15px;
 }
 
-.card:hover{
-    transform: scale(1.05);
-    transition: .3s;
-}
-
 .card-title{
     color: var(--pink-color);
     font-weight: 900;
@@ -40,4 +35,54 @@
 #section2 .lightblue-waves{
     top: 85vh;
     left: -25px;
+}
+#loader{
+    background: var(--pink-color);
+}
+
+/* Scroll animation */
+.scroll {
+	width: 60px;
+	height: 60px;
+	border: 2px solid var(--pink-color);
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+    background: var(--pink-color);
+	&::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 3px solid white;
+  	    border-bottom: 3px solid white;
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
 }
