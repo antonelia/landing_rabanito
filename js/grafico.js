@@ -145,3 +145,35 @@ $('#box-five').mouseenter(function () {
 });
 
 });
+
+//Gallery
+
+$(document).ready(function () {
+  $('#box-one').click(function () {
+    $('#modal-one').modal('show');
+  });
+});
+
+$(document).ready(function () {
+  $('#box-two').click(function () {
+    $('#modal-two').modal('show');
+  });
+});
+
+$(document).ready(function () {
+  $('#box-three').click(function () {
+    $('#modal-three').modal('show');
+  });
+});
+
+$(document).ready(function () {
+  $('#box-four').click(function () {
+    $('#modal-four').modal('show');
+  });
+});
+
+$(document).ready(function () {
+  $('#box-five').click(function () {
+    $('#modal-five').modal('show');
+  });
+});

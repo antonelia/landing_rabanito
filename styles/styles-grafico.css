@@ -281,6 +281,7 @@ section{
 .purple-waves{
   top: 5vh;
   right: -10px;
+  width: 250px;
 }
 
 .lightblue-waves{
@@ -291,6 +292,7 @@ section{
 .yellow-waves{
   top: 5vh;
   left: -10px;
+  width: 200px;
 }
 
 .cubo-3d{
