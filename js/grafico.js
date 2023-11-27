@@ -73,13 +73,13 @@ $('#box-one').mouseenter(function () {
     boxOne = true;
   
     if(boxOne==true && boxTwo==true && boxThree==true && boxFour==true && boxFive==true){
-        // Delay for 5 seconds
-        setTimeout(function () {
-          // Fade out the body with a duration of 1 second
-          $('body').fadeOut(1000, function () {
-              // Navigate to the new page after fade out
-              window.location.href = 'file:///C:/Users/Usuario/Desktop/experiencia_rabanito/gravity.html';
-          });
+      // Delay for 5 seconds
+      setTimeout(function () {
+        // Fade out the body with a duration of 1 second   
+        $('div').fadeOut(1000, function () {
+          // Navigate to the new page after fade out
+          window.location.href = 'gravity.html';
+        });
       }, 1000);
     }
 });
@@ -88,14 +88,11 @@ $('#box-two').mouseenter(function () {
     boxTwo = true;
   
     if(boxOne==true && boxTwo==true && boxThree==true && boxFour==true && boxFive==true){
-      // Delay for 5 seconds
       setTimeout(function () {
-        // Fade out the body with a duration of 1 second
-        $('body').fadeOut(1000, function () {
-            // Navigate to the new page after fade out
-            window.location.href = 'file:///C:/Users/Usuario/Desktop/experiencia_rabanito/gravity.html';
+        $('div').fadeOut(1000, function () {
+          window.location.href = 'gravity.html';
         });
-    }, 1000);
+      }, 1000);
     }
 });
 
@@ -103,14 +100,11 @@ $('#box-three').mouseenter(function () {
   boxThree = true;
 
   if(boxOne==true && boxTwo==true && boxThree==true && boxFour==true && boxFive==true){
-    // Delay for 5 seconds
     setTimeout(function () {
-      // Fade out the body with a duration of 1 second
-      $('body').fadeOut(1000, function () {
-          // Navigate to the new page after fade out
-          window.location.href = 'file:///C:/Users/Usuario/Desktop/experiencia_rabanito/gravity.html';
+      $('div').fadeOut(1000, function () {
+          window.location.href = 'gravity.html';
       });
-  }, 1000);
+    }, 1000);
   }
 });
 
@@ -118,14 +112,11 @@ $('#box-four').mouseenter(function () {
   boxFour = true;
 
   if(boxOne==true && boxTwo==true && boxThree==true && boxFour==true && boxFive==true){
-    // Delay for 5 seconds
     setTimeout(function () {
-      // Fade out the body with a duration of 1 second
-      $('body').fadeOut(1000, function () {
-          // Navigate to the new page after fade out
-          window.location.href = 'file:///C:/Users/Usuario/Desktop/experiencia_rabanito/gravity.html';
+      $('div').fadeOut(1000, function () {
+        window.location.href = 'gravity.html';
       });
-  }, 1000);
+    }, 1000);
   }
 });
 
@@ -133,14 +124,11 @@ $('#box-five').mouseenter(function () {
   boxFive = true;
 
   if(boxOne==true && boxTwo==true && boxThree==true && boxFour==true && boxFive==true){
-    // Delay for 5 seconds
     setTimeout(function () {
-      // Fade out the body with a duration of 1 second
-      $('body').fadeOut(1000, function () {
-          // Navigate to the new page after fade out
-          window.location.href = 'file:///C:/Users/Usuario/Desktop/experiencia_rabanito/gravity.html';
+      $('div').fadeOut(1000, function () {
+        window.location.href = 'gravity.html';
       });
-  }, 1000);
+    }, 1000);
   }
 });
 
