@@ -315,10 +315,10 @@ document.body.addEventListener('touchcancel',function(){
 var cantidadImagenes = 5;
     var indiceImagen = 1;
 
-    function cambiarImagen() {
+    function cambiarImagenChica() {
         var imagen = document.getElementById('dobleexposicionImg');
         indiceImagen = (indiceImagen % cantidadImagenes) + 1; // Avanzar al siguiente índice circularmente
-        imagen.src = '../assets/img/dobleexposicion-' + indiceImagen + '.jpg';
+        imagen.src = '/assets/img/dobleexposicion-' + indiceImagen + '.jpg';
     }
 
 //end
