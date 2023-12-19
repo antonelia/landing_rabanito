@@ -21,3 +21,15 @@ body.dark-mode,
 .dark-mode .card{
     background-color: var(--card-fill-dark);
 }
+
+.dark-mode .navbar{
+    background-color: rgba(44, 43, 56, 0.684);
+}
+
+.dark-mode .navbar-toggler span{
+    background-color: white;
+}
+
+.dark-mode .contact-data i, .dark-mode .contact-data a{
+    color: white;
+}

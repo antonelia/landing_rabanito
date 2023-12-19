@@ -13,6 +13,8 @@ $( document ).ready(function() {
       console.log("quitar clase")
     }
   });
+
+  $(".cubo-abierto").hide();
 });
 
 /*Gallery*/
@@ -321,6 +323,7 @@ var cantidadImagenes = 5;
 
 //end
 
+
 $('#gameboy').on("click", function () {
 	$('#gameboyModal').modal('show');
 })
@@ -376,3 +379,18 @@ $('#skatebici').on("click", function () {
 $('#vortex').on("click", function () {
 	$('#vortexModal').modal('show');
 })
+
+//cambiar img cubo al hacer hover
+
+var imagenOriginal = '../assets/img/cube-01.svg';
+var imagenHover = '../assets/img/cube-open-01.svg';
+
+function cambiarImagen(nuevaRuta) {
+	var imagen = document.getElementById('descubrir-btn');
+	imagen.src = nuevaRuta;
+}
+
+function restaurarImagen() {
+	var imagen = document.getElementById('descubrir-btn');
+	imagen.src = imagenOriginal;
+}

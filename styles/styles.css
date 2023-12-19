@@ -124,21 +124,16 @@ header{
     backdrop-filter: blur(20px);
 }
 
-header .navbar-brand{
-    font-size: xx-large;
-    font-weight: bold;
-    color: var(--dark-text-color);
+.navbar{
+  background-color: rgba(255, 255, 255, 0.684);
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 2px 18px 2px #00000014;
 }
 
-header .nav-link{
-    font-size:large;
-    color: var(--dark-text-color);
-    font-weight: 500;
+.nav-link{
+  color: var(--pink-color);
 }
 
-header .nav-item{
-    padding: 0 1rem;
-}
 
 .toggle-checkbox {
     position: absolute;
@@ -362,10 +357,6 @@ a:hover {
   min-height: 100vh;
 }
 
-.grid-container{
-  background: url(/assets/img/grid.svg) center left no-repeat, url(/assets/img/grid.svg) bottom right no-repeat;
-}
-
 .cd-main-content::after {
   clear: both;
   content: "";
@@ -410,7 +401,6 @@ xtab-filter
 
 -------------------------------- */
 .cd-tab-filter-wrapper {
-  background-color: #ffffff;
   z-index: 1;
 }
 .cd-tab-filter-wrapper::after {
@@ -1115,6 +1105,78 @@ video {
   height: auto;
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-image: url(../assets/img/radish.png); 
+  background-repeat: no-repeat, no-repeat;
+  background-size: 0px;
+}
+
+#section1{
+  background: white;
+  background: url("../assets/img/fondo-violeta-seccion-uno.png");
+  background-size: contain;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#section1 h2{
+  font-size: 60px;
+  color: var(--dark-blue-color);
+}
+
+#section1 h2 span{
+  font-size: 80px;
+  color: var(--pink-color);
+  font-family: Lato-bold, Arial, sans-serif;
+}
+
+.columna-titulo{
+  display: flex;
+  align-items: center;
+  padding-left: 5vw;
+}
+.columna-titulo,
+.columna-fondo-violeta{
+  width: 50%;
+
+}
+.columna-fondo-violeta{
+  height: 100vh;
+
+}
+.fondo-rotar{
+  background: url("../assets/img/elementos-seccion-1.png");
+  background-size: contain;
+  position: relative;
+  left: 300px;
+  top: -100px;
+  background-repeat: no-repeat;
+  animation:spin 75s linear infinite;
+  transform-origin: center;
+  height: 120vh;
+  width: 120vh;
+
+}
+.fondo-rotar:hover{
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  animation-play-state: paused;
+}
+@keyframes spin{
+from{transform:rotate(360deg)}
+to{transform:rotate(0deg)}	
+}
+
+
 /*Modals*/
 
 .modal-dialog{
@@ -1156,7 +1218,7 @@ iframe{
 .contact-data{
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .contact-data i{
@@ -1326,19 +1388,42 @@ padding: 0;
   cursor: pointer;
 }
 
-.controls{
-  background-color: red;
+.plyr--video .plyr__controls{
+  background: transparent !important;
+}
+
+.plyr__video-wrapper {
+  background: transparent !important;
+}
+
+.plyr--video .plyrprogressbuffer{
+  color: #bfbfbf !important;
 }
 
 .typed-cursor{
   display: none;
 }
 
+#descubrir-btn{
+  width: 300px;
+  height: 300px;
+}
+
+
+
 /*only desktop*/
 
 @media screen and (min-width: 769px){
   .d-none-desktop{
     display: none;
+  }
+
+  .w-md-75{
+    width: 75% !important;
+  }
+
+  .grid-container{
+    background: url(/assets/img/grid.svg) center left no-repeat, url(/assets/img/grid.svg) bottom right no-repeat;
   }
 }
 
@@ -1351,6 +1436,15 @@ padding: 0;
 
   .w-50, .h-50{
     width: 100%;
+  }
+
+  .fs-1{
+    font-size: 1.7rem;
+  }
+
+  .fs-2{
+    font-size: 1.2rem;
+    line-height: 1.3;
   }
 
   .cd-tab-filter{
@@ -1369,5 +1463,60 @@ padding: 0;
 
   .fa-caret-down{
     color: var(--pink-color);
+  }
+
+  .toggle-slot{
+    width: 85px;
+    height: 43px;
+  }
+
+  .toggle-button{
+    transform: translate(46px, 7px);
+    height: 25px;
+    width: 25px;
+  }
+
+  .moon-icon-wrapper{
+    transform: translate(6px, 5px) rotate(0deg);
+  }
+
+  .toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper{
+    transform: translate(46px, 5px);
+  }
+
+  #section1 h2{
+    font-size: 2.5rem;
+  }
+
+  #section1 h2 span{
+    font-size: 3.5rem;
+  }
+
+  #section1{
+    background: none;
+  }
+
+  .fondo-rotar{
+    left: 15vw;
+    top: -2vh;
+    width: 80vw;
+    height: 80vh;
+  }
+
+  .grid-container{
+    margin-top: 3rem;
+  }
+
+  .navbar-toggler{
+    border: none;
+  }
+
+  .navbar-toggler span{
+    background-color: var(--purple-color);
+    mask-image: var(--bs-navbar-toggler-icon-bg);
+  }
+
+  .modal-footer{
+    flex-direction: column-reverse;
   }
 }

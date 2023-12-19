@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/styles_parallax.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/styles-index.css">
     <link rel="stylesheet" href="styles/styles_dark_mode.css">
 
     <!--Lottie-->
@@ -28,7 +27,7 @@
 
     <!--Header-->
     <div class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -119,14 +118,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <h2 class="text-center wow fadeInUp mb-5 fs-1">Nuestro arte 🪄</h2>
+                    <h2 class="text-center wow fadeInUp mb-5 fs-1">Nuestra magia 🪄</h2>
                 </div>
             </div>
 
             <div class="row mt-3 mb-5">
                 <div class="col-12 d-flex flex-column align-items-center">
-                    <p class="text-center fs-2 wow fadeInUp">Acá te dejamos un resumen para que pispees un poco </p>
-                    <video class="w-75" controls poster="assets/img/reel-thumbnail.jpg">
+                    <p class="text-center fs-2 wow fadeInUp">Te dejamos un resumen para que pispees un poco de nuestros trabajos </p>
+                    <video class="w-100 w-md-75" controls poster="assets/img/reel-thumbnail.jpg">
                         <source src="assets/vid/reel_rabanito.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -349,8 +348,7 @@
                 <h2 class="text-center fadeInUp mb-5 fs-1">¡Charlemos! 📲</h2>
             </div>
         </div>
-        <div class="row">
-    
+        <div class="row d-flex flex-column flex-md-row align-items-center ">
             <div class="col-12 col-md-6">
                 <div class="contact-data wow fadeInDown">
                     <i class="fa-regular fa-envelope me-2"></i>
@@ -360,6 +358,12 @@
                 <div class="contact-data wow fadeInDown">
                     <i class="fa-brands fa-instagram me-2"></i>
                     <a href="instagram.com/agenciarabanito">@agenciarabanito</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div>
+                    <img id="descubrir-btn" src="./assets/img/cube-01.svg" alt="" class="cubo-cerrado" onmouseover="cambiarImagen('./assets/img/cube-open-01.svg')" onmouseout="restaurarImagen()">
                 </div>
             </div>
         </div>
@@ -450,7 +454,7 @@
                 <p class="text-center my-2">🎨 Modelado hecho y animado en 3Ds Max, texturizado en Substance Painter y renderizado con VRay.</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
                 <button type="button" class="btn btn-primary">Ver en Arstation</button>
             </div>
@@ -478,7 +482,7 @@
                 <p class="text-center my-2">🎨 Modelado hecho, animado y texturizado en 3Ds Max y renderizado con VRay.</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
                 <button type="button" class="btn btn-primary">Ver en Arstation</button>
             </div>
@@ -505,7 +509,7 @@
                 <p class="text-center my-2">🎨 Modelado hecho, texturizado y animado en 3Ds Max y renderizado con VRay.</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
                 <button type="button" class="btn btn-primary">Ver en Arstation</button>
             </div>
@@ -532,7 +536,7 @@
                 <p class="text-center my-2">🎨 Modelado hecho, texturizado y animado en 3Ds Max y renderizado con VRay.</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
                 <button type="button" class="btn btn-primary">Ver en Arstation</button>
             </div>
@@ -559,7 +563,7 @@
                 <p class="text-center my-2">🎨 Modelado hecho, texturizado y animado en 3Ds Max y renderizado con VRay.</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
                 <button type="button" class="btn btn-primary">Ver en Arstation</button>
             </div>
@@ -604,7 +608,7 @@
                 </div>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
             </div>
         </div>
@@ -627,7 +631,7 @@
                 <p class=" my-2">🖌️ Ilustraciones realizadas con Photoshop.</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
             </div>
         </div>
@@ -651,7 +655,7 @@
                 <p class="my-2">🖌️ Ilustraciones realizadas con Illustrator, inspiradas en obras de Tom Whalen</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
             </div>
         </div>
@@ -674,7 +678,7 @@
                 <p class=" my-2">🖌️ Ilustraciones realizadas con Illustrator, inspiradas en obras de Tom Whalen</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
             </div>
         </div>
@@ -695,7 +699,7 @@
                 <img class="img-fluid" src="assets/img/hola-mundo-branding.png" alt="Branding Hola Mundo">
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
             </div>
         </div>
@@ -720,7 +724,7 @@
                 <p class="text-center my-2">🎥 Animación realizada con Cinema 4D y texturizada con Keyshot</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
             </div>
         </div>
@@ -745,7 +749,7 @@
                 <p class="text-center my-2">🎥 Animación realizada con Cinema 4D y texturizada con Keyshot</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
             </div>
         </div>
@@ -770,7 +774,7 @@
                 <p class="text-center my-2">🎥 Montaje realizado con After Effects + Cinema 4D</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
             </div>
         </div>
@@ -801,7 +805,7 @@
                 <p class="text-center my-2">🎥 Animaciones realizadas con After Effects</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
             </div>
         </div>
@@ -826,7 +830,7 @@
                 <p class="text-center my-2">🎥 Montaje realizado con After Effects + Cinema 4D</p>
             </div>
 
-            <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
+            <div class="modal-footer d-flex flex-md-row justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver más trabajos</button>
             </div>
         </div>
