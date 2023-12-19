@@ -362,6 +362,10 @@ a:hover {
   min-height: 100vh;
 }
 
+.grid-container{
+  background: url(/assets/img/grid.svg) center left no-repeat, url(/assets/img/grid.svg) bottom right no-repeat;
+}
+
 .cd-main-content::after {
   clear: both;
   content: "";
@@ -1313,6 +1317,24 @@ padding: 0;
 #seccion-layers-fade h3{
   margin-top: 50%;
 }
+
+.vertical-img-modal {
+  max-height: 70vh !important;
+}
+
+#dobleexposicionImg, .card-img-top{
+  cursor: pointer;
+}
+
+.controls{
+  background-color: red;
+}
+
+.typed-cursor{
+  display: none;
+}
+
+/*only desktop*/
 
 @media screen and (min-width: 769px){
   .d-none-desktop{

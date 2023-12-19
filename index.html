@@ -26,10 +26,6 @@
 </head>
 <body>
 
-    <div id="loader">
-        <div class="lds-heart"><div></div></div>
-    </div>
-
     <!--Header-->
     <div class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -76,7 +72,15 @@
     <!-- Intro -->
     <section class="section" id="section1">
         <div class="d-flex">
-            <div class="columna-titulo wow fadeInDown"><h2>¡Hola!<br><span>somos Rabanito</span></h2></div>
+            <div class="columna-titulo wow fadeInDown">
+                <h2>¡Hola!
+                <br>
+                <!--typed-->
+                <span id="element"></span>
+            </h2>
+                
+            </div>
+            
             <div class="columna-fondo-violeta wow fadeInRight">
                 <div class="fondo-rotar"></div>
             </div>
@@ -111,7 +115,7 @@
     </section>
     
     <!--Trabajos-->
-    <section>
+    <section class="grid-container">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -119,222 +123,221 @@
                 </div>
             </div>
 
-            <div class="row my-5">
+            <div class="row mt-3 mb-5">
                 <div class="col-12 d-flex flex-column align-items-center">
                     <p class="text-center fs-2 wow fadeInUp">Acá te dejamos un resumen para que pispees un poco </p>
-                    <video class="w-75" controls>
+                    <video class="w-75" controls poster="assets/img/reel-thumbnail.jpg">
                         <source src="assets/vid/reel_rabanito.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
             
-        <div class="wow fadeInUp" data-wow-delay="0.5s">
-            <main class="cd-main-content">
-                <!-- filter -->
-            <div class="cd-tab-filter-wrapper">
-                <div class="cd-tab-filter">
-                    <ul class="p-0 cd-filters">
-                        <li class="placeholder"> 
-                            <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
-                        </li> 
-                        <li class="filter"><a class="selected" href="#0" data-type="all">De todo un poco</a></li>
-                        <li class="filter" data-filter=".3D"><a href="#0" data-type="3D">3D</a></li>
-                        <li class="filter" data-filter=".grafico"><a href="#0" data-type="grafico">Gráfico</a></li>
-                        <li class="filter" data-filter=".motion"><a href="#0" data-type="motion">Motion</a></li>
-                        <li class="filter" data-filter=".webs"><a href="#0" data-type="webs">Webs</a></li>
-                        <li class="filter" data-filter=".juegos"><a href="#0" data-type="juegos">Juegos</a></li>
+            <div class="wow fadeInUp" data-wow-delay="0.5s">
+                <main class="cd-main-content">
+                    <!-- filter -->
+                    <div class="cd-tab-filter-wrapper">
+                        <div class="cd-tab-filter">
+                            <ul class="p-0 cd-filters">
+                                <li class="placeholder"> 
+                                    <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+                                </li> 
+                                <li class="filter"><a class="selected" href="#0" data-type="all">De todo un poco</a></li>
+                                <li class="filter" data-filter=".3D"><a href="#0" data-type="3D">3D</a></li>
+                                <li class="filter" data-filter=".grafico"><a href="#0" data-type="grafico">Gráfico</a></li>
+                                <li class="filter" data-filter=".motion"><a href="#0" data-type="motion">Motion</a></li>
+                                <li class="filter" data-filter=".webs"><a href="#0" data-type="webs">Webs</a></li>
+                                <li class="filter" data-filter=".juegos"><a href="#0" data-type="juegos">Juegos</a></li>
 
 
-                    </ul> 
-                    <!-- cd-filters -->
-                    <i class="fa-solid fa-caret-down d-none-desktop"></i>
-                </div> 
-            </div>
-                <!--items-->
-            <section class="cd-gallery">
-                <ul class="grid cs-style-3">
-                    <li class="mix 3D" data-toggle="modal" data-target="#gameboyModal" id="gameboy">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-gameboy-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix 3D" data-toggle="modal" data-target="#pokedexModal" id="pokedex">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-pokedex-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix 3D" data-toggle="modal" data-target="#nesModal" id="nes">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-nes-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix 3D" data-toggle="modal" data-target="#camaraModal" id="camara">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-camara-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix 3D" data-toggle="modal" data-target="#switchModal" id="switch">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-switch-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix grafico" data-toggle="modal" data-target="#vintageModal" id="vintage">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-vintage-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix grafico" data-toggle="modal" data-target="#dobleexposicionModal" id="dobleexposicion">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-dobleexposicion-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix grafico" data-toggle="modal" data-target="#monsterincModal" id="monsterinc">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-monsterinc-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix grafico" data-toggle="modal" data-target="#frozenModal" id="frozen">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-frozen-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix grafico" data-toggle="modal" data-target="#holamundoModal" id="holamundo">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-holamundo-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix motion" data-toggle="modal" data-target="#caramelosModal" id="caramelos">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-caramelos-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix motion" data-toggle="modal" data-target="#vueltaalmundoModal" id="vueltaalmundo">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-vueltaalmundo-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix motion" data-toggle="modal" data-target="#alfombraModal" id="alfombra">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-alfombra-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix motion" data-toggle="modal" data-target="#skatebiciModal" id="skatebici">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-skatebici-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix motion" data-toggle="modal" data-target="#vortexModal" id="vortex">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-vortex-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                    </li>
-                    <li class="mix webs">
-                        <a href="https://rabanito.online/maquillajeprofesional/" target="_blank">
-                            <figure>
-                                <img src="assets/img/thumbnail/portfolio-luciabelen-thumbnail.jpg">
-                                <div class="blur_bg"></div>
-                            </figure>
-                        </a>
-                        
-                    </li>
-                    <li class="mix webs">
-                        <a href="https://www.indarsrl.com.ar" target="_blank">
-                            <figure>
-                                <img src="assets/img/thumbnail/portfolio-indar-thumbnail.jpg">
-                                <div class="blur_bg"></div>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="mix webs">
-                        <a href="https://rabanito.online/renuevatusventanas/" target="_blank">
-                        <figure>
-                            <img src="assets/img/thumbnail/portfolio-ventanaspe-thumbnail.jpg">
-                            <div class="blur_bg"></div>
-                        </figure>
-                        </a>
-                    </li>
-                    <li class="mix webs" data-toggle="modal" data-target="#sonrisassanasModal" id="sonrisassanas">
-                        <a href="http://rabanito.online/sonrisanas" target="_blank">
-                            <figure>
-                                <img src="assets/img/thumbnail/portfolio-sonrisassanas-thumbnail.jpg">
-                                <div class="blur_bg"></div>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="mix webs" data-toggle="modal" data-target="#warnerModal" id="warner">
-                        <a href="https://rabanito.online/landingWarner/" target="_blank">
-                            <figure>
-                                <img src="assets/img/thumbnail/portfolio-warner-thumbnail.jpg">
-                                <div class="blur_bg"></div>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="mix juegos" data-toggle="modal" data-target="#bareciclaModal" id="barecicla">
-                        <a href="https://rabanito.online/BA-Recicla/" target="_blank">
-                            <figure>
-                                <img src="assets/img/thumbnail/portfolio-barecicla-thumbnail.jpg">
-                                <div class="blur_bg"></div>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="mix juegos" data-toggle="modal" data-target="#diaModal" id="dia">
-                        <a href="https://rabanito.online/Juego-Dia/" target="_blank">
-                            <figure>
-                                <img src="assets/img/thumbnail/portfolio-dia-thumbnail.jpg">
-                                <div class="blur_bg"></div>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="mix juegos" data-toggle="modal" data-target="#mywalletModal" id="mywallet">
-                        <a href="https://rabanito.com.ar/experienciav2/my-wallet.html" target="_blank">
-                            <figure>
-                                <img src="assets/img/thumbnail/portfolio-mywallet-thumbnail.jpg">
-                                <div class="blur_bg"></div>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="mix juegos" data-toggle="modal" data-target="#viernesdesiluetasModal" id="viernesdesiluetas">
-                        <a href="https://rabanito.online/Viernes-de-siluetas/" target="_blank">
-                            <figure>
-                                <img src="assets/img/thumbnail/portfolio-viernesdesiluetas-thumbnail.jpg">
-                                <div class="blur_bg"></div>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="mix juegos" data-toggle="modal" data-target="#minijuegosModal" id="minijuegos">
-                        <a href="https://rabanito.online/Mercantil-Andina/" target="_blank">
-                            <figure>
-                                <img src="assets/img/thumbnail/portfolio-minijuegos-thumbnail.jpg">
-                                <div class="blur_bg"></div>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="gap"></li>
-                    <li class="gap"></li>
-                    <li class="gap"></li>
-                </ul>
-                <div class="cd-fail-message">¡Ups! Nos agarraste, no tenemos trabajos de esta categoría 😭</div>
-            </section> <!-- cd-gallery -->
-    
-        
-        </main> <!-- cd-main-content -->
-            
-        </div>	
+                            </ul> 
+                            <!-- cd-filters -->
+                            <i class="fa-solid fa-caret-down d-none-desktop"></i>
+                        </div> 
+                    </div>
+                        <!--items-->
+                    <section class="cd-gallery">
+                        <ul class="grid cs-style-3">
+                            <li class="mix 3D" data-toggle="modal" data-target="#gameboyModal" id="gameboy">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-gameboy-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix 3D" data-toggle="modal" data-target="#pokedexModal" id="pokedex">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-pokedex-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix 3D" data-toggle="modal" data-target="#nesModal" id="nes">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-nes-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix 3D" data-toggle="modal" data-target="#camaraModal" id="camara">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-camara-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix 3D" data-toggle="modal" data-target="#switchModal" id="switch">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-switch-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix grafico" data-toggle="modal" data-target="#vintageModal" id="vintage">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-vintage-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix grafico" data-toggle="modal" data-target="#dobleexposicionModal" id="dobleexposicion">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-dobleexposicion-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix grafico" data-toggle="modal" data-target="#monsterincModal" id="monsterinc">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-monsterinc-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix grafico" data-toggle="modal" data-target="#frozenModal" id="frozen">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-frozen-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix grafico" data-toggle="modal" data-target="#holamundoModal" id="holamundo">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-holamundo-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix motion" data-toggle="modal" data-target="#caramelosModal" id="caramelos">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-caramelos-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix motion" data-toggle="modal" data-target="#vueltaalmundoModal" id="vueltaalmundo">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-vueltaalmundo-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix motion" data-toggle="modal" data-target="#alfombraModal" id="alfombra">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-alfombra-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix motion" data-toggle="modal" data-target="#skatebiciModal" id="skatebici">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-skatebici-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix motion" data-toggle="modal" data-target="#vortexModal" id="vortex">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-vortex-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                            </li>
+                            <li class="mix webs">
+                                <a href="https://rabanito.online/maquillajeprofesional/" target="_blank">
+                                    <figure>
+                                        <img src="assets/img/thumbnail/portfolio-luciabelen-thumbnail.jpg">
+                                        <div class="blur_bg"></div>
+                                    </figure>
+                                </a>
+                                
+                            </li>
+                            <li class="mix webs">
+                                <a href="https://www.indarsrl.com.ar" target="_blank">
+                                    <figure>
+                                        <img src="assets/img/thumbnail/portfolio-indar-thumbnail.jpg">
+                                        <div class="blur_bg"></div>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="mix webs">
+                                <a href="https://rabanito.online/renuevatusventanas/" target="_blank">
+                                <figure>
+                                    <img src="assets/img/thumbnail/portfolio-ventanaspe-thumbnail.jpg">
+                                    <div class="blur_bg"></div>
+                                </figure>
+                                </a>
+                            </li>
+                            <li class="mix webs" data-toggle="modal" data-target="#sonrisassanasModal" id="sonrisassanas">
+                                <a href="http://rabanito.online/sonrisanas" target="_blank">
+                                    <figure>
+                                        <img src="assets/img/thumbnail/portfolio-sonrisassanas-thumbnail.jpg">
+                                        <div class="blur_bg"></div>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="mix webs" data-toggle="modal" data-target="#warnerModal" id="warner">
+                                <a href="https://rabanito.online/landingWarner/" target="_blank">
+                                    <figure>
+                                        <img src="assets/img/thumbnail/portfolio-warner-thumbnail.jpg">
+                                        <div class="blur_bg"></div>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="mix juegos" data-toggle="modal" data-target="#bareciclaModal" id="barecicla">
+                                <a href="https://rabanito.online/BA-Recicla/" target="_blank">
+                                    <figure>
+                                        <img src="assets/img/thumbnail/portfolio-barecicla-thumbnail.jpg">
+                                        <div class="blur_bg"></div>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="mix juegos" data-toggle="modal" data-target="#diaModal" id="dia">
+                                <a href="https://rabanito.online/Juego-Dia/" target="_blank">
+                                    <figure>
+                                        <img src="assets/img/thumbnail/portfolio-dia-thumbnail.jpg">
+                                        <div class="blur_bg"></div>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="mix juegos" data-toggle="modal" data-target="#mywalletModal" id="mywallet">
+                                <a href="https://rabanito.com.ar/experienciav2/my-wallet.html" target="_blank">
+                                    <figure>
+                                        <img src="assets/img/thumbnail/portfolio-mywallet-thumbnail.jpg">
+                                        <div class="blur_bg"></div>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="mix juegos" data-toggle="modal" data-target="#viernesdesiluetasModal" id="viernesdesiluetas">
+                                <a href="https://rabanito.online/Viernes-de-siluetas/" target="_blank">
+                                    <figure>
+                                        <img src="assets/img/thumbnail/portfolio-viernesdesiluetas-thumbnail.jpg">
+                                        <div class="blur_bg"></div>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="mix juegos" data-toggle="modal" data-target="#minijuegosModal" id="minijuegos">
+                                <a href="https://rabanito.online/Mercantil-Andina/" target="_blank">
+                                    <figure>
+                                        <img src="assets/img/thumbnail/portfolio-minijuegos-thumbnail.jpg">
+                                        <div class="blur_bg"></div>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="gap"></li>
+                            <li class="gap"></li>
+                            <li class="gap"></li>
+                        </ul>
+                        <div class="cd-fail-message">¡Ups! Nos agarraste, no tenemos trabajos de esta categoría 😭</div>
+                    </section>
+
+                </main>
+                
+            </div>	
         </div>
     </section>
 
@@ -402,8 +405,8 @@
                         <h3><b>¡Cookies aceptadas!</b></h3>
                         <p class="mt-3">Qué bueno que seas fan del dulce como nosotras 😋</p>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><span>Continuar</span></button>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continuar</button>
                     </div>
                 </div>
             </div>
@@ -417,10 +420,10 @@
                     </div>
                     <div class="modal-body">
                         <h3><b>¿No te gustan las cookies? 🥺</b></h3>
-                        <p>Esperamos que si te gusten los gatitos como a nosotras</p>
+                        <p>Esperamos que sí te gusten los gatitos como a nosotras</p>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary"  data-bs-dismiss="modal"><span>Continuar</span></button>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Continuar</button>
                     </div>
                 </div>
             </div>
@@ -618,10 +621,10 @@
                 &times;
             </button>
             </div>
-            <div class="modal-body">
-                <img id="dobleexposicionImg" class="img-fluid" src="assets/img/dobleexposicion-1.jpg" alt="Collage Doble exposicion" onclick="cambiarImagen()">
+            <div class="modal-body text-center">
+                <img id="dobleexposicionImg" class="img-fluid vertical-img-modal" src="assets/img/dobleexposicion-1.jpg" alt="Collage Doble exposicion" onclick="cambiarImagen()">
                 
-                <p class="text-center my-2">🖌️ Ilustraciones realizadas con Photoshop. (Psst: Hacé click para ver magia 👀)</p>
+                <p class=" my-2">🖌️ Ilustraciones realizadas con Photoshop.</p>
             </div>
 
             <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
@@ -642,10 +645,10 @@
                 &times;
             </button>
             </div>
-            <div class="modal-body">
-                <img class="img-fluid" src="assets/img/ilustracion-monster-inc.png" alt="Ilustracion Monster Inc">
+            <div class="modal-body text-center">
+                <img class="img-fluid vertical-img-modal" src="assets/img/ilustracion-monster-inc.png" alt="Ilustracion Monster Inc">
                 
-                <p class="text-center my-2">🖌️ Ilustraciones realizadas con Illustrator, inspiradas en obras de Tom Whalen</p>
+                <p class="my-2">🖌️ Ilustraciones realizadas con Illustrator, inspiradas en obras de Tom Whalen</p>
             </div>
 
             <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
@@ -665,10 +668,10 @@
                 &times;
             </button>
             </div>
-            <div class="modal-body">
-                <img class="img-fluid" src="assets/img/ilustracion-frozen.png" alt="Ilustracion Frozen">
+            <div class="modal-body text-center">
+                <img class="img-fluid vertical-img-modal" src="assets/img/ilustracion-frozen.png" alt="Ilustracion Frozen">
                 
-                <p class="text-center my-2">🖌️ Ilustraciones realizadas con Illustrator, inspiradas en obras de Tom Whalen</p>
+                <p class=" my-2">🖌️ Ilustraciones realizadas con Illustrator, inspiradas en obras de Tom Whalen</p>
             </div>
 
             <div class="modal-footer d-flex flex-reverse-column flex-md-row justify-content-center">
@@ -844,8 +847,16 @@
     
    
     <script src="js/custom.js"></script>
+    <script src="js/typed.umd.js"></script>
     <script src="js/emoji-rain.js"></script>
     
-    
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Somos Rabanito', 'Somos coloridas', 'Somos inesperadas'],
+          typeSpeed: 50,
+          loop: true,
+          smartBackspace: true,
+        });
+    </script>
 </body>
 </html>
