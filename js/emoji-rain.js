@@ -16,13 +16,10 @@ $( document ).ready(function() {
 });
 
 $(window).on('load', function(){
-  setTimeout(function() {
-      $('#loader').fadeOut();
-  }, 2000);
 
   setTimeout(function() {
     $('#cookies-section').modal('show');
-  }, 4000);
+  }, 200);
   
 });
 
@@ -85,8 +82,3 @@ animalsButton.addEventListener('click', generateAnimalEmojis);
 const fruitsButton = document.getElementById('accept-cookies');
 fruitsButton.addEventListener('click', generateCookiesEmojis);
 
-const continuarCookiesButton = document.getElementById('continuar-cookies');
-continuarCookiesButton.addEventListener('click', avanzarPaginaNosotrasCookies);
-
-const continuarGatitosButton = document.getElementById('continuar-gatitos');
-continuarGatitosButton.addEventListener('click', avanzarPaginaNosotrasGatitos);

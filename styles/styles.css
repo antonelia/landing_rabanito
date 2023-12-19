@@ -2,8 +2,8 @@
 @import url(colors.css);
 
 *{
-    font-family: Lato-Regular, Arial, sans-serif;
-    color: var(--dark-text-color);
+  font-family: Lato-Regular, Arial, sans-serif;
+  color: var(--dark-text-color);
 }
 
 /*Custom scrollbar*/
@@ -138,13 +138,6 @@ header .nav-link{
 
 header .nav-item{
     padding: 0 1rem;
-}
-
-.switch-mode{
-  position: fixed;
-  z-index: 50;
-  top: 20px;
-  right: 5%;
 }
 
 .toggle-checkbox {
@@ -414,7 +407,6 @@ xtab-filter
 -------------------------------- */
 .cd-tab-filter-wrapper {
   background-color: #ffffff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
   z-index: 1;
 }
 .cd-tab-filter-wrapper::after {
@@ -510,7 +502,7 @@ xtab-filter
     background: transparent;
     position: static;
     box-shadow: none;
-    text-align: start;
+    text-align: center;
     border-bottom: none;
   }
   .cd-tab-filter li {
@@ -531,10 +523,9 @@ xtab-filter
     color: #41307c;
   }
   .cd-tab-filter a.selected {
-    background: transparent;
-    color: var(--dark-text-color);
-    /* create border bottom using box-shadow property */
-    border-bottom: solid 2px var(--light-blue-color);
+    background: var(--pink-color);
+    color: white;
+    border-radius: 10px;
   }
   .cd-tab-filter.is-open ul li {
     display: inline-block;
@@ -610,11 +601,12 @@ xtab-filter
     transition: width 0.3s;
   }
   .cd-gallery li {
-    width: 25%;
+  width: 30%;
 	float: left;
 	margin: 5px;
 	padding: 0;
 	position: relative;
+  cursor: pointer;
   }
   .cd-gallery.filter-is-visible {
     /* reduce width when filter is visible */
@@ -967,6 +959,9 @@ xcustom form elements
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .grid li {
@@ -1034,10 +1029,10 @@ xcustom form elements
 
 .cs-style-3 figure:hover img,
 .cs-style-3 figure.cs-hover img {
-	-webkit-transform: translateY(-50px);
-	-moz-transform: translateY(-50px);
-	-ms-transform: translateY(-50px);
-	transform: translateY(-50px);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
 	background:rgba(71,172,255,0.3);
 }
 
@@ -1108,4 +1103,249 @@ xcustom form elements
   transition: opacity 0.4s ease-in-out; 
   background: rgba(62, 62, 99, 0.2);
   backdrop-filter: blur(5px);
+}
+
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Modals*/
+
+.modal-dialog{
+  min-width: 60vw;
+}
+
+.modal-header{
+  border-bottom: none;
+}
+
+.modal-title{
+  font-size: 1.8rem;
+  text-align: center;
+  margin: auto;
+  color: var(--pink-color);
+  font-weight: 700;
+}
+
+.close{
+  border: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  color: gray !important;
+}
+
+.modal-body{
+  margin: auto;
+}
+
+.modal-body p{
+  font-size: 1.1rem;
+}
+
+iframe{
+  min-width: 100% !important;
+  height: 25rem !important;
+}
+
+.contact-data{
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.contact-data i{
+  color: var(--pink-color);
+}
+
+.contact-data a{
+  text-decoration: none;
+  color: var(--pink-color);
+}
+
+.modal-footer{
+  border-top: none;
+}
+
+.btn-primary{
+  background-color: var(--pink-color);
+}
+
+.btn-secondary{
+  border: 1px solid var(--purple-color);
+  background-color: transparent;
+  color: var(--purple-color);
+}
+
+.btn-secondary:hover{
+  background-color: var(--purple-color);
+  color: white;
+}
+
+/*Seccion antes y despues*/
+
+/* Seccion Nike antes y después*/
+#page{
+  /* width: 100%;
+  height: 100%;
+  position:absolute; */
+}
+
+/* Our normalize css */
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+
+/* Our wrapper */
+.wrapper{
+  width: calc(424px * 1.15); 
+  height: calc(600px * 1.15) ;
+  position: absolute;
+  left:50%;
+  top:55%;
+  transform:translate3d(-50%,-45%,0);
+  overflow:hidden;
+  margin-top: 38vh
+}
+
+@media(max-width:1400px){
+.wrapper{
+  width: calc(424px * 0.75); 
+  height: calc(600px * 0.75) ;
+}
+}
+
+/* Our image information */
+.before,
+.after {
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top:0;
+  left:0;
+  pointer-events:none;
+  overflow: hidden;
+}
+
+.content-image{
+  height:100%;
+}
+
+.after{
+  width:125px;
+}
+
+.scroller{
+  width: 50px;
+  height:50px;
+  position: absolute;
+  left:100px;
+  top:50%;
+  transform:translateY(-50%);
+  border-radius:50%;
+  background-color: transparent;
+  opacity:0.9;
+  pointer-events:auto;
+  cursor: pointer;
+}
+
+.scroller:hover{
+  opacity:1;
+}
+
+.scrolling{
+  pointer-events:none;
+  opacity:1;
+  z-index: 1;
+}
+
+.scroller__thumb{
+  width:100%;
+  height:100%;
+  padding:5px;
+}
+
+.scroller:before,
+.scroller:after{
+  content:" ";
+  display: block;
+  width: 3px;
+  height: 9999px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.5px;
+  z-index: 30;
+  transition:0.1s;
+}
+.scroller:before{
+  top:100%;
+}
+.scroller:after{
+  bottom:100%;
+}
+
+/* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
+.scroller{
+border: 2px solid #fff;
+}
+.scroller:before,
+.scroller:after{
+background: #fff;
+}
+
+#seccion-antes-y-despues{
+padding: 0;
+}
+
+#seccion-antes-y-despues .col{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+}
+
+#seccion-layers-fade h3{
+  margin-top: 50%;
+}
+
+@media screen and (min-width: 769px){
+  .d-none-desktop{
+    display: none;
+  }
+}
+
+/*mobile*/
+
+@media screen and (max-width: 768px){
+  .btn-primary, .btn-secondary{
+    width: 100%;
+  }
+
+  .w-50, .h-50{
+    width: 100%;
+  }
+
+  .cd-tab-filter{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    justify-content: space-between;
+  }
+
+  .cd-tab-filter ul{
+    position: inherit;
+    width: 100%;
+    border-color: var(--pink-color);
+  }
+
+  .fa-caret-down{
+    color: var(--pink-color);
+  }
 }
