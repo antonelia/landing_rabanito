@@ -115,7 +115,6 @@ h2{
     --icon-size: 28px;
 }
 header{
-    padding: 0 5vw;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -1512,11 +1511,28 @@ padding: 0;
   }
 
   .navbar-toggler span{
-    background-color: var(--purple-color);
-    mask-image: var(--bs-navbar-toggler-icon-bg);
+    /* background-color: var(--purple-color); */
+    /* mask-image: var(--bs-navbar-toggler-icon-bg); */
   }
 
   .modal-footer{
     flex-direction: column-reverse;
   }
+}
+
+
+header .navbar-toggler{
+  border: none;
+}
+header .navbar-toggler:focus{
+  border: none;
+  box-shadow: none;
+}
+
+@media (min-width: 992px){
+    .switch-mode{
+      position: absolute;
+      right: 25px;
+      top: 10px;
+    }
 }
