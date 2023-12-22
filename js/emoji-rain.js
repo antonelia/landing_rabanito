@@ -1,3 +1,18 @@
+$( document ).ready(function() {
+  
+});
+
+$( document ).ready(function() {
+  setTimeout(function() {
+      $('#loader').fadeOut();
+  }, 1000);
+  setTimeout(function() {
+    $('#cookies-section').modal('show');
+}, 2000);
+  
+});
+
+
 var msg = "";
 function generateAnimalEmojis() {
   msg = "gatitos";
@@ -15,20 +30,11 @@ $( document ).ready(function() {
   
 });
 
-$(window).on('load', function(){
-
-  setTimeout(function() {
-    $('#cookies-section').modal('show');
-  }, 200);
-  
-});
-
-
-
 function generateEmojiRain(emojis) {
   // Código que genera la lluvia de emojis
   $("#cookies-section").modal('toggle');
   const emojiRainContainer = document.createElement("div");
+  emojiRainContainer.classList.add('emojiraincontainer')
   document.body.appendChild(emojiRainContainer);
   let count = 0;
   const intervalId = setInterval(() => {
@@ -58,22 +64,17 @@ function generateEmojiRain(emojis) {
     }
   }, 50);
 
-  //Esta linea devuelve la posibilidad de scrollear el sitio luego de que se ejecutaron las funciones de la lluvia de emojis y se mostraron los modales con los mensajes
-  document.body.style.overflow = "auto";
-
 }
 
-function pageRedirect() {
-  window.location.href = 'nosotras.html';
-}
-
-function avanzarPaginaNosotrasCookies(){
+function cerrarModalCookies(){
   $('#cookies-modal').modal('toggle');
-  pageRedirect();
+  //Esta linea devuelve la posibilidad de scrollear el sitio luego de que se ejecutaron las funciones de la lluvia de emojis y se mostraron los modales con los mensajes
+  $('body').removeClass("overflow-h");
 }
-function avanzarPaginaNosotrasGatitos(){
+function acerrarModalGatitos(){
   $('#gatitos-modal').modal('toggle');
-  pageRedirect();
+  //Esta linea devuelve la posibilidad de scrollear el sitio luego de que se ejecutaron las funciones de la lluvia de emojis y se mostraron los modales con los mensajes
+  $('body').removeClass("overflow-h");
 }
 
 const animalsButton = document.getElementById('no-accept-cookies');
@@ -81,4 +82,10 @@ animalsButton.addEventListener('click', generateAnimalEmojis);
 
 const fruitsButton = document.getElementById('accept-cookies');
 fruitsButton.addEventListener('click', generateCookiesEmojis);
+
+const continuarCookiesButton = document.getElementById('continuar-cookies');
+continuarCookiesButton.addEventListener('click', cerrarModalCookies);
+
+const continuarGatitosButton = document.getElementById('continuar-gatitos');
+continuarGatitosButton.addEventListener('click', acerrarModalGatitos);
 
